@@ -54,6 +54,10 @@ public interface BasicexampleService extends OpenmrsService {
 	
 	@Authorized()
 	@Transactional
+	Item getItem(Integer id) throws APIException;
+	
+	@Authorized()
+	@Transactional
 	Item deleteItem(Item item) throws APIException;
 	
 	@Transactional(readOnly = true)

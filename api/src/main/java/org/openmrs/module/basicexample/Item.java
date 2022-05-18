@@ -10,7 +10,6 @@
 package org.openmrs.module.basicexample;
 
 import org.openmrs.BaseOpenmrsData;
-import org.openmrs.User;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -23,9 +22,14 @@ import javax.persistence.Table;
  * Please note that a corresponding table schema must be created in liquibase.xml.
  */
 //Uncomment 2 lines below if you want to make the Item class persistable, see also BasicexampleDaoTest and liquibase.xml
-@Entity(name = "basicexample.Item")
+@Entity
 @Table(name = "basicexample_item")
 public class Item extends BaseOpenmrsData {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue

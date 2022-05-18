@@ -66,4 +66,9 @@ public class BasicexampleServiceImpl extends BaseOpenmrsService implements Basic
 		// TODO Auto-generated method stub
 		return dao.getAllItems();
 	}
+	
+	@Override
+	public Item getItem(Integer id) throws APIException {
+		return dao.getItem(id);
+	}
 }

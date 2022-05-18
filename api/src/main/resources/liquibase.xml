@@ -35,8 +35,7 @@
 			<column name="quantity" type="int" />
 			<column name="purchases" type="int" />
 		</createTable>
-        <addForeignKeyConstraint constraintName="basicexample_item_owner_fk" baseTableName="basicexample_item" baseColumnNames="owner"  referencedTableName="users"
-                                 referencedColumnNames="user_id" />
+
     </changeSet> 
  
 </databaseChangeLog>

@@ -18,7 +18,7 @@ import org.openmrs.ui.framework.fragment.FragmentModel;
  */
 public class ItemFragmentController {
 	
-	public void controller(FragmentModel model, @SpringBean("basicexampleService") BasicexampleService service) {
+	public void controller(FragmentModel model, @SpringBean("basicexample.BasicexampleService") BasicexampleService service) {
 		model.addAttribute("encounters", service.getAllItems());
 	}
 	
