@@ -34,6 +34,7 @@
 			<column name="prescription" type="varchar(255)" />
 			<column name="quantity" type="int" />
 			<column name="purchases" type="int" />
+			<column name="this_.changed_by"></column>
 		</createTable>
 
     </changeSet> 
